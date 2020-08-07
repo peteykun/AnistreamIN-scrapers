@@ -28,5 +28,11 @@ You will need to open this page by first going to `contv.com` and navigating to 
 
 You will have to manually load the full page by scrolling.
 
+### Tubi
+
+    https://tubitv.com/category/anime
+
+No special instructions.
+
 More to be added soon!
 
