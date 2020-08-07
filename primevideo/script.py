@@ -27,7 +27,8 @@ for i in range(len(anime)):
         result.append({
             'title': anime[i],
             'url': anime_links[i],
-            'img_url': boxart[i]
+            'img_url': boxart[i],
+            'paid': True
         })
     except IndexError:
         print("{}/{}".format(i, len(boxart)))
@@ -35,8 +36,6 @@ for i in range(len(anime)):
 print('')
 
 print('{} anime found'.format(len(anime)))
-print('{} anime links found'.format(len(anime_links)))
-print('{} boxart images found'.format(len(boxart)))
 
 with open('output.json', 'w') as f:
-    json.dump(result, f)
+    json.dump(result, f, indent=4)
