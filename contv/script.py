@@ -37,8 +37,6 @@ for i in range(len(anime)):
         'paid': paid[i]
     })
 
-print()
-
 print('{} anime found'.format(len(anime)))
 
 with open('output.json', 'w') as f:

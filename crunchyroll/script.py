@@ -8,14 +8,10 @@ boxart = []
 with open('page.html', 'r') as f:
     soup = BeautifulSoup(f, 'html.parser')
 
-    for element in soup.find_all('p', {"class": "fallback-text"}):
-        anime.append(element.string)
-        
-    for element in soup.find_all('a', {"class": "slider-refocus"}):
-        anime_links.append('https://www.netflix.com/' + element['href'].split('?')[0])
-    
-    for element in soup.find_all('img', {"class": "boxart-image"}):
-        boxart.append(element['src'])
+    for element in soup.find_all('a', {"class": "portrait-element"}):
+        anime.append(element.contents[3].string)
+        anime_links.append('https://www.crunchyroll.com' + element['href'])
+        boxart.append(element.contents[1].contents[0]['src'])
 
 result = []
 
@@ -29,7 +25,7 @@ for i in range(len(anime)):
         'title': anime[i],
         'url': anime_links[i],
         'img_url': boxart[i],
-        'paid': True
+        'paid': False
     })
 
 print('{} anime found'.format(len(anime)))

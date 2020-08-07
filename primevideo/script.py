@@ -32,8 +32,6 @@ for i in range(len(anime)):
         })
     except IndexError:
         print("{}/{}".format(i, len(boxart)))
-        
-print('')
 
 print('{} anime found'.format(len(anime)))
 
