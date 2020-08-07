@@ -1,4 +1,4 @@
-# Scrapers for AniStream.in
+# Scrapers for Anistream.in
 
 Requires BeautifulSoup4. Copy the rendered page into `page.html` of the corresponding folder, and then run the script. An `output.json` file will be generated, containing the title, URL and image URL.
 
