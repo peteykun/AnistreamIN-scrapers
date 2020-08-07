@@ -11,5 +11,11 @@ For Prime Video, the relevant page is:
 
     https://www.primevideo.com/region/eu/search/ref=atv_dp_pd_gen?phrase=Anime&ie=UTF8
 
+For CONtv, the relevant page is:
+
+    https://www.contv.com/category-movie/159/anime/
+
+You will need to open this page by first going to `contv.com` and navigating to `Anime` via their menu.
+
 More to be added soon!
 
